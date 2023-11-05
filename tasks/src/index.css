@@ -1,0 +1,16 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+li{
+    padding: .5rem 0;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+}
