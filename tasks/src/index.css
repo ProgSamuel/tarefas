@@ -1,46 +1,114 @@
-body{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&family=Poppins:wght@400;500;700;800&display=swap');
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  font-family: 'Poppins', sans-serif;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: .3rem;
+section {
+  width: 40vw;
+  padding: 1em 3em;
 }
-li{
-    padding: 1rem 0.5rem;
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    font-weight: 900;
+    letter-spacing: .1ch;
+    transition: color 0.3s ease ; 
+    cursor: pointer; 
+  }
+  
+  h1:hover {
+    color: orange;
+  }
+  
+  h1:active {
+    transform: rotate(360deg); 
+    transition: transform 0.3s ease; 
+  }
+  
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin: 0;
+  padding: 0;
+}
+li {
+  padding: 1rem 0.5rem;
+  width: 95%;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li:hover {
+  transform: scale(1.03);
+}
+form,
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.5em 0;
 }
 
-.buttons, form{
-width: 200px;
-padding: 1em 2em;
-display: flex;
-align-items: center;
-gap: .3em;
+input {
+  width: 75%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 }
 
-button:hover{
-    cursor: pointer;
+button {
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
 }
 
-.divButtons{
-    z-index: 10;
-    display: flex;
-    gap: .5rem;
+button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
-.fa-trash{
-    color: blue
+.divButtons {
+  z-index: 10;
+  display: flex;
+  gap: 0.5rem;
 }
-.fa-pen-to-square{
-    color: green
+
+.divButtons button {
+  background-color: transparent;
+}
+
+.fa-trash {
+  color: #b22222;
+}
+.fa-pen-to-square {
+  color: #006400;
+}
+
+.seeMore {
+  background-color: white;
+}
+@media (max-width: 820px) {
+  section {
+    width: 90vw;
+    padding: 0;
+  }
+
+  li {
+    padding: 1rem 0.5rem;
+  }
 }
