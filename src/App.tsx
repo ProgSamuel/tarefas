@@ -12,7 +12,7 @@ function App() {
   const [tasks, setTasks] = useState<
     { id: string; text: string; completed: boolean }[]
   >([]);
-  const [editingTask, setEditingTask] = useState<{id:String, text:string, completed:boolean}|null>(null);
+  const [editingTask, setEditingTask] = useState<{id: string, text: string, completed: boolean} | null>(null);
   const [filter, setFilter] = useState<'all' | 'completed' | 'pending'>('all');
   const [visible, setVisible] = useState<number>(5);
 
@@ -51,7 +51,6 @@ function App() {
     localStorage.setItem(taskId, taskText);
     taskInputRef.current!.value = '';
   }, [editingTask]);
-  
 
   const toggleTaskCompletion = useCallback((taskId: string) => {
     setTasks((prevTasks) => {
