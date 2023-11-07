@@ -7,10 +7,23 @@ body{
 
 ul {
     list-style: none;
+
 }
 li{
     padding: .5rem 0;
     width: 100%;
     border-bottom: 1px solid gray;
+    cursor: pointer;
+}
+
+.buttons, form{
+width: 200px;
+padding: 1em 2em;
+display: flex;
+align-items: center;
+gap: .3em;
+}
+
+button:hover{
     cursor: pointer;
 }

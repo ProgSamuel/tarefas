@@ -7,4 +7,5 @@ background-color: blue;
 border: none;
 border-radius: 5px;
 font-weight: 600;
+
 `
