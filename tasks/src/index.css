@@ -7,13 +7,17 @@ body{
 
 ul {
     list-style: none;
-
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
 }
 li{
-    padding: .5rem 0;
+    padding: 1rem 0.5rem;
     width: 100%;
-    border-bottom: 1px solid gray;
+    border-radius: 5px;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
 }
 
 .buttons, form{
@@ -26,4 +30,17 @@ gap: .3em;
 
 button:hover{
     cursor: pointer;
+}
+
+.divButtons{
+    z-index: 10;
+    display: flex;
+    gap: .5rem;
+}
+
+.fa-trash{
+    color: blue
+}
+.fa-pen-to-square{
+    color: green
 }
