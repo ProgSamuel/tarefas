@@ -41,7 +41,7 @@ function App() {
   
     if (editingTask) {
       setTasks(prevTasks =>
-        prevTasks.map(task => (task.id === editingTask.id ? { ...task, text: taskText } : task))
+        prevTasks.map(task => (task.id === editingTask.id ? { ...task, text: taskText , completed: false} : task))
       );
       setEditingTask(null); 
     } else {
